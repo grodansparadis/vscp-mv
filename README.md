@@ -3,7 +3,7 @@
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](http://choosealicense.com/licenses/mit/)
 [![Release](https://img.shields.io/github/release/grodansparadis/vscp-mv.svg)](https://github.com/grodansparadis/vscp-mv/releases)
 
-<img src="https://www.vscp.org/images/vscp_logo_text_box.png" width="250">
+<img src="https://www.vscp.org/images/vscp_logo_text_box.png" width="150">
 
 VSCP mv is a web based tool that can be used to visualize/publish VSCP measurement data.
 
@@ -16,4 +16,5 @@ VSCP mv is a web based tool that can be used to visualize/publish VSCP measureme
 
 ## To setup the database.
 
+1. Execute the sql code found in the sql folder in your database engine.
 
