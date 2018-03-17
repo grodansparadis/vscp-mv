@@ -1,0 +1,186 @@
+// All for GUID for date
+
+SELECT date,value FROM `measurement` WHERE date >= '2018-03-04T12:00:00' AND guid="FF:FF:FF:FF:FF:FF:FF:FF:61:00:08:01:92:AF:A8:10"
+
+// MAX
+SELECT MAX(value) FROM `measurement` WHERE date >= date("2018-03-03") AND guid="FF:FF:FF:FF:FF:FF:FF:FF:61:00:08:01:92:AF:A8:10"
+
+
+// MIN
+SELECT MIN(value) FROM `measurement` WHERE date >= date("2018-03-03") AND guid="FF:FF:FF:FF:FF:FF:FF:FF:61:00:08:01:92:AF:A8:10"
+
+
+// Min/MAX
+SELECT MIN(value),MAX(value) FROM `measurement` WHERE date >= date("2018-03-03") AND guid="FF:FF:FF:FF:FF:FF:FF:FF:61:00:08:01:92:AF:A8:10"
+
+// Min/Max/Mean
+SELECT MIN(value),MAX(value),SUM(value)/COUNT(*) FROM `measurement` WHERE date >= date("2018-03-03") AND guid="FF:FF:FF:FF:FF:FF:FF:FF:61:00:08:01:92:AF:A8:10"
+
+
+// Between two date times
+SELECT * FROM `measurement` WHERE ( date BETWEEN '2018-03-03T00:00:00' AND '2018-03-03T23:23:59' )  AND guid='FF:FF:FF:FF:FF:FF:FF:FF:61:00:08:01:92:AF:A8:10'
+
+
+// Min/max/count between dates
+SELECT MIN(value), MAX(value), COUNT(*) FROM `measurement` WHERE ( date BETWEEN '2018-03-04T00:00:00' AND '2018-03-04T23:23:59' )  AND guid="FF:FF:FF:FF:FF:FF:FF:FF:61:00:08:01:92:AF:A8:10"
+
+// Last row
+SELECT fields FROM table ORDER BY id DESC LIMIT 1;
+
+// seco units with GUID
+SELECT seco.name, seco.description, guid.guid FROM seco, guid WHERE guid.idx = seco.link_to_guid;
+
+Queries
+=======
+
+
+// First hour
+https://eurosource.se/get_measurement.php?from=2018-03-03T00:00:00&to=2018-03-03T00:59:59
+
+// Full day
+https://http://www.eurosource.se/measurements/get_measurement.php?from=2018-03-05T00:00:00&to=2018-03-05T23:59:59
+
+
+Tables
+======
+
+guid 		- Holds guid's and description of device guid defines.
+seco 		- Defines one sensor or control device.
+measurement - Holds a measurement.
+rawevent 	- Holds a raw VSCP event.
+zone 		- Defines a zone.
+subzone 	- Defines a subzone.
+
+
+json test code: http://jsonplaceholder.typicode.com/posts
+https://fullcalendar.io
+
+Add data to chart dynamically: 
+  https://stackoverflow.com/questions/31059399/how-to-push-datasets-dynamically-for-chart-js-bar-chart
+
+barChart.data.datasets.push({
+  label: 'label2',
+  backgroundColor: '#ff0000',
+  data: [1,2,3]
+});
+barChart.update();
+
+Here's a jsfiddle example.  
+
+Libs
+====
+
+http://bernii.github.io/gauge.js/
+
+https://github.com/rheh/HTML5-canvas-projects
+http://www.daterangepicker.com/
+https://longbill.github.io/jquery-date-range-picker/
+https://github.com/coryschires/radio-buttons
+
+
+FF:FF:FF:FF:FF:FF:FF:FF:3C:00:08:01:92:9D:3D:10 	Office 1 - 1-wire
+FF:FF:FF:FF:FF:FF:FF:FF:61:00:08:01:92:AF:A8:10 	Temp outside (south wall)
+FF:FF:FF:FF:FF:FF:FF:FE:B8:27:EB:40:59:96:00:01 	CPU Pi1
+FF:FF:FF:FF:FF:FF:FF:FE:B8:27:EB:40:59:96:00:02 	GPU Pi1
+
+<form action="/wiki/doku.php/" method="post">
+	<input type="hidden" name="do"   value="admin" />
+	<input type="hidden" name="page" value="backup" />
+<center>	Backup method: <select name="backup[type]">
+		<option value="exec" selected>GNU Tar (filtered)</option>
+		<option value="lazy" >GNU Tar (fast;unfiltered)</option>
+	</select><br/><br/>
+<table class="inline">	<tr><th> Item type </th><th> Add to archive? </th></tr>	<tr><td> Pages </td><td><input type="checkbox" name="backup[pages]" checked/></td></tr>	<tr><td> Old Revisions of Pages </td><td><input type="checkbox" name="backup[revisions]" checked/></td></tr>	<tr><td> Meta data (Subscriptions)</td><td><input type="checkbox" name="backup[subscriptions]" checked/></td></tr>	<tr><td> Media files </td><td><input type="checkbox" name="backup[media]" checked/></td></tr>	<tr><td> Wiki/<acronym title="Access Control List">ACL</acronym>/User Config </td><td><input type="checkbox" name="backup[config]" checked/></td></tr>	<tr><td> Templates</td><td><input type="checkbox" name="backup[templates]" checked/></td></tr>	<tr><td> Plugins</td><td><input type="checkbox" name="backup[plugins]" checked/></td></tr></table><br /><p><input type="submit" class="button" value="Create Backup"></p></center></form>
+
+
+http://php.net/manual/en/class.dateinterval.php
+http://php.net/manual/en/dateinterval.createfromdatestring.php
+http://www.php.net/manual/en/datetime.formats.relative.php
+
+/www/webvol23/r7/vdbq8cur420eh42/eurosource.se/public_html/measurements/get_seco.php
+
+https://stackoverflow.com/questions/25255891/add-active-class-dynamically-to-bootstrap-menu-and-opening-its-page
+
+
+year    $from = $dt->format('Y-01-01\T00:00:00');  
+		$to = $dt->format('Y-12-31\T23:59:59');
+
+month	$from = $dt->format('Y-m-01\T00:00:00');  
+		date('d M Y\T00:00:00', strtotime('last day of this month') )
+		$to = $dt->format('Y-m-28/30/31\T23:59:59');
+
+week	$from = $dt->format('Y-01-01\T00:00:00');  
+		$to = $dt->format('Y-12-31\T23:59:59');
+
+day		$from = $dt->format('Y-m-d\T00:00:00');  
+		$to = $dt->format('Y-m-d\T23:59:59');
+
+hour
+
+
+function getStartAndEndDate($week, $year) {
+  $dto = new DateTime();
+  $ret['week_start'] = $dto->setISODate($year, $week)->format('Y-m-d');
+  $ret['week_end'] = $dto->modify('+6 days')->format('Y-m-d');
+  return $ret;
+}
+
+
+
+
+
+<li class="nav-item">
+<a class="nav-link" href="javascript:fetchData('FF:FF:FF:FF:FF:FF:FF:FF:3C:00:08:01:92:9D:3D:10');">
+<span data-feather="activity"> </span> Office 1 temperature</a></li>
+single_temp.php:99:8
+
+
+<li class="nav-item"><a class="nav-link" href="javascript:fetchData('FF:FF:FF:FF:FF:FF:FF:FF:3C:00:08:01:92:9D:3D:10');"><span data-feather="activity"> </span> Office 1 temperature</a></li>
+single_temp.php:99:8
+<li class="nav-item"><a class="nav-link" href="javascript:fetchData('FF:FF:FF:FF:FF:FF:FF:FF:61:00:08:01:92:AF:A8:10');"><span data-feather="activity"> </span> Temp. outside (south wall)</a></li>
+single_temp.php:99:8
+<li class="nav-item"><a class="nav-link" href="javascript:fetchData('FF:FF:FF:FF:FF:FF:FF:FE:B8:27:EB:40:59:96:00:01');"><span data-feather="activity"> </span> CPU Pi1</a></li>
+single_temp.php:99:8
+<li class="nav-item">
+<a class="nav-link" href="javascript:fetchData('FF:FF:FF:FF:FF:FF:FF:FE:B8:27:EB:40:59:96:00:02');">
+<span data-feather="activity"> </span> GPU Pi1</a></li>
+
+
+
+----------------------------
+
+
+
+
+** Error in `/usr/local/bin/vscpd': corrupted size vs. prev_size: 0x007ff558 ***
+[New Thread 0x9407e450 (LWP 7195)]
+[Thread 0x9587e450 (LWP 7180) exited]
+[Thread 0x9407e450 (LWP 7186) exited]
+
+Thread 3143 "vscpd" received signal SIGABRT, Aborted.
+[Switching to Thread 0x9687e450 (LWP 7184)]
+__GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+51	../sysdeps/unix/sysv/linux/raise.c: No such file or directory.
+(gdb) bt
+#0  __GI_raise (sig=sig@entry=6) at ../sysdeps/unix/sysv/linux/raise.c:51
+#1  0xb6755824 in __GI_abort () at abort.c:89
+#2  0xb678ef78 in __libc_message (do_abort=do_abort@entry=2, 
+    fmt=<optimized out>) at ../sysdeps/posix/libc_fatal.c:175
+#3  0xb6795ad4 in malloc_printerr (action=<optimized out>, 
+    str=0xb6847ee4 "corrupted size vs. prev_size", ptr=<optimized out>, 
+    ar_ptr=<optimized out>) at malloc.c:5049
+#4  0xb6798588 in _int_malloc (av=av@entry=0xb6864794 <main_arena>, 
+    bytes=bytes@entry=144) at malloc.c:3765
+#5  0xb679a370 in __GI___libc_malloc (bytes=144) at malloc.c:2928
+#6  0xb69867a0 in operator new(unsigned int) ()
+   from /usr/lib/arm-linux-gnueabihf/libstdc++.so.6
+#7  0xb6a2cf60 in std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_mutate(unsigned int, unsigned int, wchar_t const*, unsigned int) () from /usr/lib/arm-linux-gnueabihf/libstdc++.so.6
+#8  0xb6a2dc04 in std::__cxx11::basic_string<wchar_t, std::char_traits<wchar_t>, std::allocator<wchar_t> >::_M_replace(unsigned int, unsigned int, wchar_t const*, unsigned int) () from /usr/lib/arm-linux-gnueabihf/libstdc++.so.6
+#9  0xb6bdeb9c in wxString::Mid(unsigned int, unsigned int) const ()
+   from /usr/lib/arm-linux-gnueabihf/libwx_baseu-3.0.so.0
+#10 0x0025ed7c in ?? ()
+#11 0x0030ee10 in ?? ()
+Backtrace stopped: previous frame identical to this frame (corrupt stack?)
+(gdb) 
+
+
