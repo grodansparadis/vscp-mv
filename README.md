@@ -6,3 +6,14 @@
 <img src="https://www.vscp.org/images/vscp_logo_text_box.png" width="250">
 
 VSCP mv is a web based tool that can be used to visualize/publish VSCP measurement data.
+
+## To install
+
+1. Copy the file to a web server.
+2. Move the settings.cfg file to a folder located two levels above the installation folder.
+3. Enter your preferences into the settings.cfg.
+4. Done!
+
+## To setup the database.
+
+
