@@ -67,6 +67,11 @@ barChart.update();
 
 Here's a jsfiddle example.  
 
+SQL injections
+==============
+https://www.owasp.org/index.php/SQL_Injection_Prevention_Cheat_Sheet
+
+
 Libs
 ====
 
@@ -82,6 +87,9 @@ FF:FF:FF:FF:FF:FF:FF:FF:3C:00:08:01:92:9D:3D:10 	Office 1 - 1-wire
 FF:FF:FF:FF:FF:FF:FF:FF:61:00:08:01:92:AF:A8:10 	Temp outside (south wall)
 FF:FF:FF:FF:FF:FF:FF:FE:B8:27:EB:40:59:96:00:01 	CPU Pi1
 FF:FF:FF:FF:FF:FF:FF:FE:B8:27:EB:40:59:96:00:02 	GPU Pi1
+
+FF:FF:FF:FF:FF:FF:FF:FE:B8:27:EB:C9:69:7A:00:01   CPU temp Pi2
+FF:FF:FF:FF:FF:FF:FF:FE:B8:27:EB:C9:69:7A:00:02   GPU temp Pi2
 
 <form action="/wiki/doku.php/" method="post">
 	<input type="hidden" name="do"   value="admin" />
