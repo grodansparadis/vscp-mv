@@ -18,3 +18,6 @@ VSCP mv is a web based tool that can be used to visualize/publish VSCP measureme
 
 1. Execute the sql code found in the sql folder in your database engine.
 
+## Copyright
+Copyright (C) 2000-2020 Ake Hedman, Grodans Paradis AB - MIT license.
+

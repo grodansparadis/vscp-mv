@@ -46,7 +46,7 @@
 		</style>
 
 		<!-- Bootstrap core CSS -->
-		<link href="js/bootstrap-4.0.0/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="js/bootstrap-4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
 		<link href="measurements.css" rel="stylesheet">
@@ -92,7 +92,7 @@
 			<div class="row">
 				<div class="col-sm-3"></div>
 				<div class="col-sm-6">
-					<div class="text-muted text-center" id="copyright"><br><br>Copyright &copy; 2018 Åke Hedman, <a href="http://www.grodansparadis.com">Grodans Paradis AB</a><br>
+					<div class="text-muted text-center" id="copyright"><br><br>Copyright &copy; 2018-2020 Åke Hedman, <a href="http://www.grodansparadis.com">Grodans Paradis AB</a><br>
 			    	Part of the <a href="https://www.vscp.org">vscp.org</a> project. MIT Licens
 					</div>
 				</div>  
@@ -107,8 +107,8 @@
 		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 		<script type="text/javascript" src="js/moment.min.js"></script>
 
-		<script src="js/bootstrap-4.0.0/assets/js/vendor/popper.min.js"></script>
-    	<script src="js/bootstrap-4.0.0/dist/js/bootstrap.min.js"></script>
+		<script src="js/bootstrap-4.4.1/assets/js/vendor/popper.min.js"></script>
+    	<script src="js/bootstrap-4.4.1/dist/js/bootstrap.min.js"></script>
 
 		<!-- Icons -->		
     	<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
