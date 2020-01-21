@@ -168,7 +168,7 @@
             </div>
             
             <div>
-					    <div class="text-muted text-center" id="copyright"><br><br>Copyright &copy; 2018-2020 Åke Hedman, <a href="http://www.grodansparadis.com">Grodans Paradis AB</a><br>
+					    <div class="text-muted text-center" id="copyright"><br><br>Copyright &copy; 2018-2020 Åke Hedman, <a href="https://www.grodansparadis.com">Grodans Paradis AB</a><br>
 			    	  Part of the <a href="https://www.vscp.org">vscp.org</a> project. MIT Licens
 					    </div>
 				    </div>  
