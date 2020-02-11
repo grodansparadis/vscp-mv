@@ -43,7 +43,7 @@
 		</style>
 
 		<!-- Bootstrap core CSS -->
-		<link href="js/bootstrap-4.4.1/dist/css/bootstrap.min.css" rel="stylesheet">
+		<link href="js/bootstrap-4.3.1-dist/css/bootstrap.min.css" rel="stylesheet">
 
 		<!-- Custom styles for this template -->
 		<link href="measurements.css" rel="stylesheet">
@@ -114,7 +114,7 @@
 		<script type="text/javascript" src="js/moment.min.js"></script>
 
 		<script src="https://unpkg.com/@popperjs/core@2.0.0-rc.3"></script>
-    	        <script src="js/bootstrap-4.4.1/dist/js/bootstrap.min.js"></script>
+    	        <script src="js/bootstrap-4.3.1-dist/js/bootstrap.min.js"></script>
 
 		<!-- Icons -->		
     	<script src="https://unpkg.com/feather-icons/dist/feather.min.js"></script>
