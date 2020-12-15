@@ -104,7 +104,7 @@
 		
 
 		<!-- javascript -->
-		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
 		<script type="text/javascript" src="js/moment.min.js"></script>
 
 		<script src="js/bootstrap-4.4.1-distassets/js/vendor/popper.min.js"></script>

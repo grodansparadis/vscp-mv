@@ -180,7 +180,7 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery-3.5.1.min.js"></script>
 	  <script type="text/javascript" src="js/moment.min.js"></script>
     <script src="js/bootstrap-4.4.1-distassets/js/vendor/popper.min.js"></script>
     <script src="js/bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
